@@ -1,2 +1,2 @@
-# Call_static_method
+# C# Study
 呼叫靜態方法
