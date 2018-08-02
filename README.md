@@ -1,2 +1,3 @@
 # C# Study
-呼叫靜態方法
+
+Random_extraction.cs --- 隨機抽取
