@@ -7,19 +7,19 @@ using System;
             Random k = new Random();
             double DD;
             DD = k.NextDouble(); // >= 0 && < 1 的 double
-            Console.WriteLine("DD == " + DD);
-            string[] P;
+            Console.WriteLine("DD == " + DD); // 顯示 DD 的值
 
+            string[] P; // 設一個陣列
             P = new string[] { "皮卡丘", "水箭龜", "妙蛙種子", "小火龍" };
 
             Console.WriteLine("????????????????????????????");
-            for(int i = 0; i < P.Length; i++)
+            for (int i = 0; i < P.Length; i++)
             {
                 Console.Write(" " + P[i]);
             }
             Console.WriteLine();
             Console.WriteLine("###############################");
-
+    
             // fix #1 隨機抽出每一個
             int Left = P.Length;
             {
@@ -27,10 +27,10 @@ using System;
                 for(int i = 0; i<P.Length; i++)
                 {
                     DD = k.NextDouble();
-                    int index = (int)(Left * DD); //轉型成 int
+                    int index = (int)(Left * DD); // 轉型成 int
                     Console.WriteLine(index);
                     Console.Write(" " + P[index]);
-                    //對調
+                    // 對調
                     {
                         string 記下 = P[index];
                         P[index] = P[Left - 1];
@@ -61,6 +61,6 @@ using System;
             }
             Console.WriteLine();
             Console.WriteLine();
-        }
-    }
+        }    
+}
 
